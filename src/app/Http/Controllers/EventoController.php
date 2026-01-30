@@ -69,7 +69,7 @@ class EventoController extends Controller
      */
     public function show($id)
     {
-        $evento = Evento::ﬁnd($id);
+        $evento = Evento::find($id);
 
         if (!$evento) {
         $respuesta = ['message' => 'Evento no encontrado', 'status' => 404,];
@@ -87,7 +87,7 @@ class EventoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $evento = Evento::ﬁnd($id);
+        $evento = Evento::find($id);
 
         if (!$evento) {
         $respuesta = ['message' => 'Evento no encontrado', 'status' => 404,];
@@ -123,7 +123,7 @@ class EventoController extends Controller
      */
     public function destroy($id)
     {
-        $evento = Evento::ﬁnd($id);
+        $evento = Evento::find($id);
 
         if (!$evento) {
         $respuesta = ['message' => 'Evento no encontrado', 'status' => 404,];
